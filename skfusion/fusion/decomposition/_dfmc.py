@@ -363,7 +363,7 @@ def dfmc(R, M, Theta, obj_types, obj_type2rank, max_iter=10,
 
         for r in G:
             G[r] = np.multiply(G[r], np.sqrt(
-                np.divide(G_enum[r], np.maximum(G_denom[r], np.finfo(np.float).eps))))
+                np.divide(G_enum[r], np.maximum(G_denom[r], np.finfo(float).eps))))
 
         #######################################################################
 
